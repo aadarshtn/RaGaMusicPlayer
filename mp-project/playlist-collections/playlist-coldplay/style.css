@@ -1,0 +1,236 @@
+       /* Playlist Page Specific CSS Rules */
+
+       /* General Rules */
+
+p{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Header Section */
+
+header{
+    margin-top: -8px;
+    margin-left: -8px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    /* box-shadow: 0px 100px 500px; */
+}
+
+#headspan{
+    display: flex;
+}
+
+#logo-and-name{
+    display: flex;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+}
+
+#name{
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.speciala{
+    text-decoration: none;
+    color: #000000;
+}
+
+.specialtext{
+    color: #000000;
+    font-family: fantasy;
+    padding: 0;
+    margin: 0;
+}
+
+#favs{
+    position: relative;
+    left: 20vw;
+    top: 15px;
+
+}
+
+#search{
+    position: relative;
+    display: inline-block;
+    left: 55vw;
+    top: 15px;
+    border-radius: 6px;
+    height: 25px;
+    width: 230px;
+    background-color: #8d2929;
+}
+
+#searchbox{
+    text-decoration: white;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    outline: none;
+    height: 25px; 
+    margin: 0px;
+    padding: 0px; 
+    box-shadow: none;
+    background: none;
+    border: none;
+}
+
+#searchbox::placeholder{
+    color: white;
+}
+
+#search-icon{
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+
+#microphone-icon{
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+
+#notifications{
+    position: relative;
+    display: inline-block;
+    left: 58vw;
+    top: 18px;
+
+}
+
+#notification-icon{
+    color: rgb(150, 38, 38);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#myaccount{
+    position: relative;
+    left: 63vw;
+}
+
+#profile-pic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+        /* Main Section */
+
+#artist-article{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 3.5rem;
+    width: 70vw;
+}
+
+
+#artist-main-image-size{
+    display: inline-block
+    margin-top: 4px;
+    width: 300px;
+    height: 300px;
+}
+
+#main-artist-info{
+    margin-left:2.5rem ;
+    display: flex;
+    flex-direction: column;
+}
+
+#flex-design{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+
+.dot-menu{
+    transform: translateX(950%);
+}
+
+.dot-menu:after {
+    content: '\2807';
+    font-size: 20px;
+    }
+
+.playlist-song-tiles{
+    margin-top: 3.5rem;
+    margin-left: 3.5rem;
+    display: flex;
+    width: 70vw;
+    padding: 5px;
+    /* box-shadow: 0px 0px 5px; */
+}
+
+.playlist-song-tiles:hover{
+    box-shadow: 0px 0px 1px;
+}
+
+.playlist-song-tile-size{
+    height: 70px;
+}
+
+#song-info{
+    font-size: 0.8rem;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+ 
+    /*Aside Section */
+
+
+#multiple-aside-section-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#queue-section{
+    margin-top: 2.3rem;
+    margin-left: 2rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 80%;
+
+}
+
+#queue-section::-webkit-scrollbar{
+    display: none;
+}
+
+.queue-song-tiles{
+    display: flex;
+    flex-direction: column;
+}
+
+.queue-song-tile-size{
+    height: 50px;
+    width: 50px;
+    box-shadow: 1px 1px 10px;
+}
+
+.love-button{
+    position: relative;
+    left: 30%;
+}
+
+.love-button:after{
+    content: '\2661';
+    font-size: 30px;
+}
